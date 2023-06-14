@@ -1,0 +1,53 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMasterPage.master" AutoEventWireup="true" CodeFile="Residential.aspx.cs" Inherits="Residential" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div class="innerpage-banner center bg-overlay-dark-7 py-7" style="background: url() no-repeat; background-size: cover; background-position: center center;">
+        <div class="container">
+            <div class="row all-text-white">
+                <div class="col-md-12 align-self-center">
+                    <h1 class="innerpage-title">Residential</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active"><a href="#"><i class="ti-home"></i>Home</a></li>
+                            <li class="breadcrumb-item">Residential</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog-page pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 blog-grid blog-grid-4 portfolio-wrap" data-isotope='{ "itemSelector": ".post-item", "layoutMode": "fitRows" }'>
+                    <!-- Post item  with image-->
+                    <asp:Repeater ID="Repeater1" runat="server">
+                        <ItemTemplate>
+                            <div class="post-item">
+                                <div class="post-item-wrap">
+                                    <div class="post-image">
+                                        <a href="#">
+                                            <img src="Images/Property/<%#Eval("PropertyId") %>/<%#Eval("ImageName") %><%#Eval("Extention") %>" alt="">
+                                        </a>
+                                        <span class="post-meta-category bg-grad"><a href="#"><%#Eval("BuildingHsNo")%></a></span>
+                                    </div>
+                                    <div class="post-item-desc">
+                                      
+                                        <h4><a href="#"><a href="#"><%#Eval("BuildingHsNo")%></a></h4>
+                                        <p><%#Eval("Description")%></p>
+                                        <a href="Residentialpage.aspx?ID=<%#Eval("PropertyId")%>" class="item-link">Continue reading<i class="ti-minus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</asp:Content>
+

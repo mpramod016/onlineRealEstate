@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomeMasterPage.master.cs" Inherits="HomeMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home | Online Real Estate Management System</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Creative Multipurpose Bootstrap Template">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CPlayfair+Display:400,400i,700,700i%7CRoboto:400,400i,500,700" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/vendor/themify-icons/css/themify-icons.css" />
+	<link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/vendor/owlcarousel/css/owl.carousel.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/vendor/swiper/css/swiper.min.css" />
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+	<header class="header-static navbar-sticky navbar-light">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<!-- Logo -->
+				<a class="navbar-brand" href="#">
+					Online Real Estate Management System
+				</a>
+				<!-- Menu opener button -->
+				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"> </span>
+			  </button>
+				<!-- Main Menu Start -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+							<a class="nav-link" href="MyProfile.aspx">MyProfile</a>
+						</li>
+						<!-- Menu item 1 Demos-->
+                          <li class="nav-item dropdown">
+							<a class="nav-link" href="ChangePassword.aspx">ChangePassword</a>
+						</li>
+                          <li class="nav-item dropdown">
+							<a class="nav-link" href="MyProperty.aspx">MyProperty</a>
+						</li>
+                          <li class="nav-item dropdown">
+							<a class="nav-link" href="PostProperty.aspx">PostProperty</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="Residential.aspx">Residential</a>
+						</li>
+						<!-- Menu item 2 Blog-->
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="Commercial.aspx">Commercial</a>
+						</li>
+						<!-- Menu item 3 Pages-->
+						
+					</ul>
+				</div>
+				<!-- Main Menu End -->
+				<!-- Header Extras Start-->
+				<div class="navbar-nav">
+                <div class="nav-item search border-0 pl-3 pr-0 px-lg-2" id="search">
+					</div>
+					<div class="nav-item border-0 d-none d-lg-inline-block align-self-center">
+						<a href="Index.aspx" class=" btn btn-sm btn-grad text-white mb-0">Logout</a>
+					</div>
+				</div>
+				<!-- Header Extras End-->
+			</div>
+		</nav>
+	</header>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   <footer class="footer bg-light pt-6">
+		<div class="footer-content pb-3">
+			<div class="container">
+				<div class="row">
+					<!-- Footer widget 1 -->
+					<div class="col-md-4">
+						<div class="widget">
+							<a href="Index.aspx" class="footer-logo">
+								OREMS
+							</a>
+						</div>
+					</div>
+					<!-- Footer widget 2 -->
+					<div class="col-md-3 col-sm-6">
+						<div class="widget address" style="background-image: url('assets/images/world-map.png'); background-position: 50% 20px; background-repeat: no-repeat; background-size: contain;">
+							<ul class="list-unstyled">
+								<li class="media mb-3"><i class="mr-3 display-8 ti-map-alt"></i>1421 Coburn Hollow Road Metamora, Near Center Point, IL 61548. </li>
+								<li class="media mb-3"><i class="mr-3 display-8 ti-headphone-alt"></i> (251) 854-6308 </li>
+								<li class="media mb-3"><i class="mr-3 display-8 ti-email"></i> help@rjdeveloper.com</li>
+								<li class="media mb-3"><i class="mr-3 display-8 ti-time"></i>
+									<p>Mon - Fri: <strong>09:00 - 21:00</strong> <br>Sat & Sun: <strong>Closed</strong></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Footer widget 3 -->
+					<div class="col-md-2 col-sm-6">
+						<div class="widget">
+							<h6>Quick LInks</h6>
+							<ul class="nav flex-column primary-hover">
+								<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Residential</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Commercial</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Enquiry</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Footer widget 4 -->
+			</div>
+		</div>
+		<div class="divider mt-3"></div>
+		<!--footer copyright -->
+		<div class="footer-copyright py-3">
+			<div class="container">
+				<div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
+					<!-- copyright text -->
+					<div class="copyright-text">©2019 All Rights Reserved by <a href="#!"> Online Real Estate Management System</a></div>
+					<!-- copyright links-->
+					<div class="copyright-links primary-hover mt-3 mt-md-0">
+						<ul class="list-inline">
+							<li class="list-inline-item pl-2"><a class="list-group-item-action" href="#">Home</a></li>
+							<li class="list-inline-item pl-2"><a class="list-group-item-action" href="#">Residential</a></li>
+							<li class="list-inline-item pl-2"><a class="list-group-item-action" href="#">Commercial</a></li>
+							<li class="list-inline-item pl-2"><a class="list-group-item-action" href="#">Enquiry</a></li>
+							<li class="list-inline-item pl-2"><a class="list-group-item-action pr-0" href="#">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
+
+    </div>
+    </form>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/popper.js/umd/popper.min.js"></script>
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!--Vendors-->
+	<script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+	<script src="assets/vendor/owlcarousel/js/owl.carousel.min.js"></script>
+	<script src="assets/vendor/swiper/js/swiper.js"></script>
+	<script src="assets/vendor/wow/wow.min.js"></script>
+
+	<!--Template Functions-->
+	<script src="assets/js/functions.js"></script>
+</body>
+</html>
